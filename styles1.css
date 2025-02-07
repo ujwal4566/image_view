@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2e2e2e; 
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 30px 0;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 3px solid rgb(205, 12, 12);
+  box-shadow: 0 4px 10px rgba(18, 219, 109, 0.2);
+}
+
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.caption { 
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white; 
+  padding: 5px 10px; 
+  width: auto; 
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: auto;
+  transform: none;
+  bottom: 10px;
+  background-color: rgba(170, 17, 225, 0.7);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(22, 212, 219, 0.5);
+}
+
+.prev-btn {
+  top: auto;
+  left: 10px;
+  transform: none;
+}
+
+.next-btn {
+  right: 10px;
+}
